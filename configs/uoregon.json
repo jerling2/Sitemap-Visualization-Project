@@ -1,0 +1,15 @@
+{
+    "url": "https://www.uoregon.edu",
+    "max_depth": 2,
+    "max_pages": 100,
+    "url_pattern_filter": [
+        "*www.uoregon.edu*"
+    ],
+    "content_type_filter": [
+        "text/html"
+    ],
+    "domain_filter": {
+        "allowed_domains": ["uoregon.edu"],
+        "blocked_domains": []
+    }
+}
