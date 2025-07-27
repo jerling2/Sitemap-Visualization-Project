@@ -1,5 +1,5 @@
 import asyncio
-from config_helper import ExtractionMode
+from src.config_helper import ExtractionMode
 
 
 DATA_PATH = "./data"
