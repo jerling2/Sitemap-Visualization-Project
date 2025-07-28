@@ -28,6 +28,8 @@ class ExtractionMode(Shell):
         
     def interact(self):
         path_to_config = self._prompt_for_config()
+        if not path_to_config:
+            return print("Uh oh, there's no configs in the configs directory.")
         try:
             config = self._load_json(path_to_config)
         except Exception as e:

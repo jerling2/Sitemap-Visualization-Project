@@ -3,9 +3,10 @@ import os
 from pathlib import Path
 
 class Shell:
-    def __init__(self, data_path=None, config_path=None):
+    def __init__(self, data_path=None, config_path=None, graph_path=None):
         self.data_path = data_path
         self.config_path = config_path
+        self.graph_path = graph_path
 
     @staticmethod
     def _load_json(path_to_json):
@@ -31,3 +32,6 @@ class Shell:
 
     def _get_config_file_path(self, filename):
         return os.path.join(self.config_path, filename + ".json")
+
+    def _get_graph_file_path(self, filename):
+        return os.path.join(self.graph_path, filename + ".html")

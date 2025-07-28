@@ -1,0 +1,19 @@
+// [Remove these comment lines in the final json]
+// Use https://docs.crawl4ai.com as a reference. 
+// Specifically, search for `BFSDeepCrawlStrategy`
+{
+    "url": "https://example.com",
+    "max_depth": 1,
+    "max_pages": 10,
+    "url_pattern_filter": [
+        "*docs*",
+        "*blogs*"
+    ],
+    "content_type_filter": [
+        "text/html"
+    ],
+    "domain_filter": {
+        "allowed_domains": ["docs.example.com"],
+        "blocked_domains": ["old.docs.example.com"]
+    }
+}

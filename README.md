@@ -1,20 +1,27 @@
 # Sitemap-Visualization-Project
 
-## Mission
+## Mission Statement
 
-This project aims to use popular tools (e.g. crawl4ai, networkX, pyVis) to crawl a website and render its sitemap.
+The purpose of this project is to use crawl4Ai and pyvis to visualize the structure of complicated websites.
 
-## Installing Dependencies
+## Installation
+
+### Virtual Environment (recommended)
 
 - `python -m venv venv`
+- `source venv/bin/activate` on Linux/MacOS
+- `venv\Scripts\activate` on Windows
 
-- `source venv/bin/activate`
+### Install Dependencies
 
-- `(venv) pip install crawl4ai`
+- `pip install -r requirements.txt`
 
-- `(venv) pip install playwright; playwrite install`
+## Usuage
 
-## Plan
+- `python3 main.py`
 
-- Phase 1: scrape data and format it in a csv.
-- Phase 2: load csv and render sitemap.
+## Rendering the Graphs
+
+- Open your browser.
+- Press Ctrl+O (or Cmd+O on macOS).
+- Browse to the .html file and open it.

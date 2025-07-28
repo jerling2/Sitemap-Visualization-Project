@@ -1,9 +1,11 @@
 import asyncio
 from src.config_helper import ExtractionMode
+from src.data_helper import VisualizationMode
 
 
-DATA_PATH = "./data"
-CONFIG_PATH = "./configs" 
+DATA_DIR = "./data"
+CONFIG_DIR = "./configs" 
+GRAPH_DIR = "./graphs"
 
 
 def main():
@@ -16,10 +18,11 @@ def main():
     
     match mode:
         case 1:
-            program = ExtractionMode(DATA_PATH, CONFIG_PATH)
+            program = ExtractionMode(DATA_DIR, CONFIG_DIR)
             program.interact()
         case 2:
-            print("two")
+            program = VisualizationMode(DATA_DIR, GRAPH_DIR)
+            program.interact()
         case _:
             return print(GOODBYE)
     return
